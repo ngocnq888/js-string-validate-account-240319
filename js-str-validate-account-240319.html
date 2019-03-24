@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Account</title>
+</head>
+<body>
+<h5>Validate Account</h5>
+<script>
+    let regExp = /^[_a-z0-9]{6,}$/;
+    let mang = ['a@123abc_','_abc123','______','123456','abcdefg','.@','12345','1234_','abcde'];
+    for(let i = 0; i < mang.length ; i++){
+        if(regExp.test(mang[i])){
+            console.log(mang[i] + ' : Hop le !');
+            document.write(mang[i] + ' : Hop le ! <br/><br/>');
+        }
+        else {
+            console.log(mang[i] + ' : KHONG Hop le !');
+            document.write(mang[i] + ' : KHONG Hop le ! <br/><br/>');
+        }
+    }
+</script>
+</body>
+</html>
